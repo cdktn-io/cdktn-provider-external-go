@@ -11,7 +11,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"@cdktf/provider-external.dataExternal.DataExternal",
+		"@cdktn/provider-external.dataExternal.DataExternal",
 		reflect.TypeOf((*DataExternal)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -65,7 +65,7 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-external.dataExternal.DataExternalConfig",
+		"@cdktn/provider-external.dataExternal.DataExternalConfig",
 		reflect.TypeOf((*DataExternalConfig)(nil)).Elem(),
 	)
 }

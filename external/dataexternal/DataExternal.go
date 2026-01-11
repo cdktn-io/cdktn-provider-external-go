@@ -5,10 +5,10 @@ package dataexternal
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-external-go/external/v11/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-external-go/external/v11/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-external-go/external/v11/dataexternal/internal"
+	"github.com/cdktn-io/cdktn-provider-external-go/external/v11/dataexternal/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -344,7 +344,7 @@ func NewDataExternal(scope constructs.Construct, id *string, config *DataExterna
 	j := jsiiProxy_DataExternal{}
 
 	_jsii_.Create(
-		"@cdktf/provider-external.dataExternal.DataExternal",
+		"@cdktn/provider-external.dataExternal.DataExternal",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -357,7 +357,7 @@ func NewDataExternal_Override(d DataExternal, scope constructs.Construct, id *st
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-external.dataExternal.DataExternal",
+		"@cdktn/provider-external.dataExternal.DataExternal",
 		[]interface{}{scope, id, config},
 		d,
 	)
@@ -452,7 +452,7 @@ func DataExternal_GenerateConfigForImport(scope constructs.Construct, importToId
 	var returns cdktf.ImportableResource
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-external.dataExternal.DataExternal",
+		"@cdktn/provider-external.dataExternal.DataExternal",
 		"generateConfigForImport",
 		[]interface{}{scope, importToId, importFromId, provider},
 		&returns,
@@ -487,7 +487,7 @@ func DataExternal_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-external.dataExternal.DataExternal",
+		"@cdktn/provider-external.dataExternal.DataExternal",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -506,7 +506,7 @@ func DataExternal_IsTerraformDataSource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-external.dataExternal.DataExternal",
+		"@cdktn/provider-external.dataExternal.DataExternal",
 		"isTerraformDataSource",
 		[]interface{}{x},
 		&returns,
@@ -525,7 +525,7 @@ func DataExternal_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-external.dataExternal.DataExternal",
+		"@cdktn/provider-external.dataExternal.DataExternal",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -538,7 +538,7 @@ func DataExternal_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"@cdktf/provider-external.dataExternal.DataExternal",
+		"@cdktn/provider-external.dataExternal.DataExternal",
 		"tfResourceType",
 		&returns,
 	)
