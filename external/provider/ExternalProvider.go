@@ -1,25 +1,25 @@
-// Copyright (c) HashiCorp, Inc.
+// Copyright IBM Corp. 2021, 2026
 // SPDX-License-Identifier: MPL-2.0
 
 package provider
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktn-io/cdktn-provider-external-go/external/v11/jsii"
+	_init_ "github.com/cdktn-io/cdktn-provider-external-go/external/v12/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktn-io/cdktn-provider-external-go/external/v11/provider/internal"
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/cdktn-io/cdktn-provider-external-go/external/v12/provider/internal"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
 // Represents a {@link https://registry.terraform.io/providers/hashicorp/external/2.3.5/docs external}.
 type ExternalProvider interface {
-	cdktf.TerraformProvider
+	cdktn.TerraformProvider
 	Alias() *string
 	SetAlias(val *string)
 	AliasInput() *string
 	// Experimental.
-	CdktfStack() cdktf.TerraformStack
+	CdktfStack() cdktn.TerraformStack
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
@@ -33,7 +33,7 @@ type ExternalProvider interface {
 	// Experimental.
 	RawOverrides() interface{}
 	// Experimental.
-	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
+	TerraformGeneratorMetadata() *cdktn.TerraformProviderGeneratorMetadata
 	// Experimental.
 	TerraformProviderSource() *string
 	// Experimental.
@@ -62,7 +62,7 @@ type ExternalProvider interface {
 
 // The jsii proxy struct for ExternalProvider
 type jsiiProxy_ExternalProvider struct {
-	internal.Type__cdktfTerraformProvider
+	internal.Type__cdktnTerraformProvider
 }
 
 func (j *jsiiProxy_ExternalProvider) Alias() *string {
@@ -85,8 +85,8 @@ func (j *jsiiProxy_ExternalProvider) AliasInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_ExternalProvider) CdktfStack() cdktf.TerraformStack {
-	var returns cdktf.TerraformStack
+func (j *jsiiProxy_ExternalProvider) CdktfStack() cdktn.TerraformStack {
+	var returns cdktn.TerraformStack
 	_jsii_.Get(
 		j,
 		"cdktfStack",
@@ -155,8 +155,8 @@ func (j *jsiiProxy_ExternalProvider) RawOverrides() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_ExternalProvider) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
-	var returns *cdktf.TerraformProviderGeneratorMetadata
+func (j *jsiiProxy_ExternalProvider) TerraformGeneratorMetadata() *cdktn.TerraformProviderGeneratorMetadata {
+	var returns *cdktn.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
 		j,
 		"terraformGeneratorMetadata",
@@ -223,14 +223,14 @@ func (j *jsiiProxy_ExternalProvider)SetAlias(val *string) {
 	)
 }
 
-// Generates CDKTF code for importing a ExternalProvider resource upon running "cdktf plan <stack-name>".
-func ExternalProvider_GenerateConfigForImport(scope constructs.Construct, importToId *string, importFromId *string, provider cdktf.TerraformProvider) cdktf.ImportableResource {
+// Generates CDKTN code for importing a ExternalProvider resource upon running "cdktn plan <stack-name>".
+func ExternalProvider_GenerateConfigForImport(scope constructs.Construct, importToId *string, importFromId *string, provider cdktn.TerraformProvider) cdktn.ImportableResource {
 	_init_.Initialize()
 
 	if err := validateExternalProvider_GenerateConfigForImportParameters(scope, importToId, importFromId); err != nil {
 		panic(err)
 	}
-	var returns cdktf.ImportableResource
+	var returns cdktn.ImportableResource
 
 	_jsii_.StaticInvoke(
 		"@cdktn/provider-external.provider.ExternalProvider",
