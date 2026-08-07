@@ -11,6 +11,7 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 
 	"github.com/aws/constructs-go/constructs/v10"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
 func (e *jsiiProxy_ExternalProvider) validateAddOverrideParameters(path *string, value interface{}) error {
@@ -28,6 +29,14 @@ func (e *jsiiProxy_ExternalProvider) validateAddOverrideParameters(path *string,
 func (e *jsiiProxy_ExternalProvider) validateOverrideLogicalIdParameters(newLogicalId *string) error {
 	if newLogicalId == nil {
 		return fmt.Errorf("parameter newLogicalId is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (e *jsiiProxy_ExternalProvider) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
+	if feature == "" {
+		return fmt.Errorf("parameter feature is required, but nil was provided")
 	}
 
 	return nil

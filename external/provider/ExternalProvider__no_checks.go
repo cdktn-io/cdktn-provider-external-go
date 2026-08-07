@@ -15,6 +15,10 @@ func (e *jsiiProxy_ExternalProvider) validateOverrideLogicalIdParameters(newLogi
 	return nil
 }
 
+func (e *jsiiProxy_ExternalProvider) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
+	return nil
+}
+
 func validateExternalProvider_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
