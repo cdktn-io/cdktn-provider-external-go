@@ -12,7 +12,7 @@ import (
 	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/external/2.4.0/docs/data-sources/external external}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/external/2.4.1/docs/data-sources/external external}.
 type DataExternal interface {
 	cdktn.TerraformDataSource
 	// Experimental.
@@ -356,7 +356,7 @@ func (j *jsiiProxy_DataExternal) WorkingDirInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/external/2.4.0/docs/data-sources/external external} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/external/2.4.1/docs/data-sources/external external} Data Source.
 func NewDataExternal(scope constructs.Construct, id *string, config *DataExternalConfig) DataExternal {
 	_init_.Initialize()
 
@@ -374,7 +374,7 @@ func NewDataExternal(scope constructs.Construct, id *string, config *DataExterna
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/external/2.4.0/docs/data-sources/external external} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/external/2.4.1/docs/data-sources/external external} Data Source.
 func NewDataExternal_Override(d DataExternal, scope constructs.Construct, id *string, config *DataExternalConfig) {
 	_init_.Initialize()
 
