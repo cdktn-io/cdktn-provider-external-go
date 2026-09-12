@@ -7,7 +7,7 @@ package provider
 type ExternalProviderConfig struct {
 	// Alias name.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/external/2.4.1/docs#alias ExternalProvider#alias}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/external/2.4.2/docs#alias ExternalProvider#alias}
 	Alias *string `field:"optional" json:"alias" yaml:"alias"`
 }
 
